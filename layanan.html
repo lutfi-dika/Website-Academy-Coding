@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academy Coding</title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+   <link rel="stylesheet" href="layanan.css">
+   <link rel="website icon" type="png" href="Purple minimalist Tech Company Logo.png">
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="logo">
+          <span>
+            Academy Coding
+          </span>
+        </div>
+        <div class="toggle" id="toggle">
+          &#9776;
+          <!-- Icon Hamburger -->
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="layanan.html">Services</a></li>
+         
+        </ul>
+      </nav>
+      <script>
+        document.getElementById("toggle").addEventListener("click", function () {
+          const navLinks = document.getElementById("nav-links");
+          navLinks.classList.toggle("active");
+        });
+      </script>
+
+    <div id="app">
+      <header>
+        <h1>Programming Languages Explorer</h1>
+        <p class="subtitle">Your comprehensive guide to the world of coding</p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search programming languages...">
+        </div>
+      </header>
+
+      <main>
+        <section id="popular" class="section">
+          <h2 class="section-title">Popular Languages</h2>
+          <div class="language-grid">
+            <section class="language-card">
+              <div class="card-header python">
+                <h3>Python</h3>
+                <span class="difficulty">Beginner Friendly</span>
+              </div>
+              <div class="language-content">
+                <p>A versatile, high-level language known for its simplicity and readability.</p>
+                <div class="features">
+                  <h4>Key Features:</h4>
+                  <ul>
+                    <li>Easy to learn syntax</li>
+                    <li>Large standard library</li>
+                    <li>Cross-platform compatibility</li>
+                    <li>Rich ecosystem of packages</li>
+                  </ul>
+                </div>
+                <div class="use-cases">
+                  <h4>Popular Uses:</h4>
+                  <ul>
+                    <li>Data Science & AI</li>
+                    <li>Web Development</li>
+                    <li>Automation & Scripting</li>
+                    <li>Scientific Computing</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="language-card">
+              <div class="card-header javascript">
+                <h3>JavaScript</h3>
+                <span class="difficulty">Intermediate</span>
+              </div>
+              <div class="language-content">
+                <p>The language that powers the modern web and beyond.</p>
+                <div class="features">
+                  <h4>Key Features:</h4>
+                  <ul>
+                    <li>Dynamic typing</li>
+                    <li>First-class functions</li>
+                    <li>Rich DOM manipulation</li>
+                    <li>Asynchronous programming</li>
+                  </ul>
+                </div>
+                <div class="use-cases">
+                  <h4>Popular Uses:</h4>
+                  <ul>
+                    <li>Frontend Development</li>
+                    <li>Backend (Node.js)</li>
+                    <li>Mobile Apps</li>
+                    <li>Real-time Applications</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="language-card">
+              <div class="card-header java">
+                <h3>Java</h3>
+                <span class="difficulty">Intermediate</span>
+              </div>
+              <div class="language-content">
+                <p>A robust, object-oriented language with wide enterprise adoption.</p>
+                <div class="features">
+                  <h4>Key Features:</h4>
+                  <ul>
+                    <li>Platform independence</li>
+                    <li>Strong type system</li>
+                    <li>Extensive frameworks</li>
+                    <li>High performance</li>
+                  </ul>
+                </div>
+                <div class="use-cases">
+                  <h4>Popular Uses:</h4>
+                  <ul>
+                    <li>Enterprise Software</li>
+                    <li>Android Development</li>
+                    <li>Cloud Applications</li>
+                    <li>Microservices</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section id="beginner" class="section">
+          <h2 class="section-title">Beginner Friendly</h2>
+          <div class="language-grid">
+            <section class="language-card">
+              <div class="card-header ruby">
+                <h3>Ruby</h3>
+                <span class="difficulty">Beginner Friendly</span>
+              </div>
+              <div class="language-content">
+                <p>An elegant language focused on simplicity and productivity.</p>
+                <div class="features">
+                  <h4>Key Features:</h4>
+                  <ul>
+                    <li>Clean syntax</li>
+                    <li>Object-oriented</li>
+                    <li>Rich libraries (gems)</li>
+                    <li>Active community</li>
+                  </ul>
+                </div>
+                <div class="use-cases">
+                  <h4>Popular Uses:</h4>
+                  <ul>
+                    <li>Web Development</li>
+                    <li>Scripting</li>
+                    <li>Data Processing</li>
+                    <li>DevOps</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="language-card">
+              <div class="card-header swift">
+                <h3>Swift</h3>
+                <span class="difficulty">Beginner Friendly</span>
+              </div>
+              <div class="language-content">
+                <p>Apple's modern language for iOS and macOS development.</p>
+                <div class="features">
+                  <h4>Key Features:</h4>
+                  <ul>
+                    <li>Type safety</li>
+                    <li>Modern syntax</li>
+                    <li>Performance focused</li>
+                    <li>Memory safety</li>
+                  </ul>
+                </div>
+                <div class="use-cases">
+                  <h4>Popular Uses:</h4>
+                  <ul>
+                    <li>iOS Apps</li>
+                    <li>macOS Apps</li>
+                    <li>Server-side Swift</li>
+                    <li>System Programming</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section id="advanced" class="section">
+          <h2 class="section-title">Advanced Languages</h2>
+          <div class="language-grid">
+            <section class="language-card">
+              <div class="card-header rust">
+                <h3>Rust</h3>
+                <span class="difficulty">Advanced</span>
+              </div>
+              <div class="language-content">
+                <p>A systems programming language focused on safety and performance.</p>
+                <div class="features">
+                  <h4>Key Features:</h4>
+                  <ul>
+                    <li>Memory safety</li>
+                    <li>Zero-cost abstractions</li>
+                    <li>Pattern matching</li>
+                    <li>Modern tooling</li>
+                  </ul>
+                </div>
+                <div class="use-cases">
+                  <h4>Popular Uses:</h4>
+                  <ul>
+                    <li>Systems Programming</li>
+                    <li>WebAssembly</li>
+                    <li>Network Services</li>
+                    <li>Embedded Systems</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="language-card">
+              <div class="card-header cpp">
+                <h3>C++</h3>
+                <span class="difficulty">Advanced</span>
+              </div>
+              <div class="language-content">
+                <p>A powerful language for system and performance-critical applications.</p>
+                <div class="features">
+                  <h4>Key Features:</h4>
+                  <ul>
+                    <li>Low-level memory control</li>
+                    <li>High performance</li>
+                    <li>Template metaprogramming</li>
+                    <li>Hardware access</li>
+                  </ul>
+                </div>
+                <div class="use-cases">
+                  <h4>Popular Uses:</h4>
+                  <ul>
+                    <li>Game Development</li>
+                    <li>Operating Systems</li>
+                    <li>Embedded Systems</li>
+                    <li>High-frequency Trading</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <div id="app">
+        <header>
+          <h1>Belajar HTML & CSS</h1>
+          <p class="subtitle">Kuasai dasar-dasar pembuatan website modern dengan HTML dan CSS. Mulai dari nol hingga mahir dalam membuat tampilan web yang menarik.</p>
+          <div class="search-bar">
+          </div>
+        </header>
+
+        <div class="max-w-4xl mx-auto mb-8">
+            <h2 class="text-blue-600 text-sm font-bold mb-2">
+             HTML DASAR
+            </h2>
+            <h1 class="text-3xl font-bold text-gray-900 mb-4">
+             Fondasi Website Modern
+            </h1>
+            <p class="text-gray-600 mb-8">
+             HTML adalah bahasa markup standar untuk membuat halaman web. Pelajari cara membuat struktur website yang baik dan benar.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+             <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+               <div class="bg-blue-100 p-3 rounded-lg">
+                <img alt="Icon representing basic HTML structure" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/SclL2UenTtC0PW6b9jP8cZEZh8ZSi1bGYrGtVebt_HM.jpg" width="24"/>
+               </div>
+               <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">
+                 Struktur HTML Dasar
+                </h3>
+                <span class="text-blue-600 text-sm bg-blue-100 px-2 py-1 rounded-full">
+                 Pemula
+                </span>
+               </div>
+              </div>
+              <p class="text-gray-600 mb-4">
+               Pelajari struktur dasar dokumen HTML dan semantic elements
+              </p>
+              <a class="text-blue-600 font-semibold" href="#">
+               Mulai Belajar
+               <i class="fas fa-arrow-right">
+               </i>
+              </a>
+             </div>
+             <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+               <div class="bg-blue-100 p-3 rounded-lg">
+                <img alt="Icon representing forms and inputs" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/D3IAUFIYz4-uC7F_3jRqFHU84KdrdLAePInfqrM2-tg.jpg" width="24"/>
+               </div>
+               <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">
+                 Form &amp; Input
+                </h3>
+                <span class="text-blue-600 text-sm bg-blue-100 px-2 py-1 rounded-full">
+                 Pemula
+                </span>
+               </div>
+              </div>
+              <p class="text-gray-600 mb-4">
+               Buat formulir interaktif dengan berbagai jenis input
+              </p>
+              <a class="text-blue-600 font-semibold" href="#">
+               Mulai Belajar
+               <i class="fas fa-arrow-right">
+               </i>
+              </a>
+             </div>
+             <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+               <div class="bg-blue-100 p-3 rounded-lg">
+                <img alt="Icon representing tables and lists" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/02Wwg5QjPFzcf4GDgOtknVWosIlfYUQswKvHQIKCK38.jpg" width="24"/>
+               </div>
+               <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">
+                 Tabel &amp; List
+                </h3>
+                <span class="text-blue-600 text-sm bg-blue-100 px-2 py-1 rounded-full">
+                 Pemula
+                </span>
+               </div>
+              </div>
+              <p class="text-gray-600 mb-4">
+               Organisasi data dengan tabel dan list yang terstruktur
+              </p>
+              <a class="text-blue-600 font-semibold" href="#">
+               Mulai Belajar
+               <i class="fas fa-arrow-right">
+               </i>
+              </a>
+             </div>
+            </div>
+           </div>
+          
+         
+           <div class="max-w-6xl mx-auto p-6">
+            <h1 class="text-purple-600 text-sm font-bold">CSS MODERN</h1>
+            <h2 class="text-4xl font-bold text-gray-900 mt-2 text-white">Desain Web yang Menarik</h2>
+            <p class="text-lg text-gray-600 mt-2">CSS adalah bahasa styling yang membuat website Anda menjadi lebih menarik dan profesional.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full">
+                            <i class="fas fa-palette text-purple-600"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900">CSS Selectors</h3>
+                            <span class="text-sm text-purple-600 bg-purple-100 px-2 py-1 rounded-full">Pemula</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Kuasi cara memilih dan menargetkan elemen HTML</p>
+                    <a href="#" class="text-purple-600 font-semibold">Mulai Belajar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full">
+                            <i class="fas fa-cubes text-purple-600"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900">Layout & Flexbox</h3>
+                            <span class="text-sm text-purple-600 bg-purple-100 px-2 py-1 rounded-full">Menengah</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Buat layout responsif dengan Flexbox</p>
+                    <a href="#" class="text-purple-600 font-semibold">Mulai Belajar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full">
+                            <i class="fas fa-mobile-alt text-purple-600"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900">Responsive Design</h3>
+                            <span class="text-sm text-purple-600 bg-purple-100 px-2 py-1 rounded-full">Menengah</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Desain website yang responsif untuk semua ukuran layar</p>
+                    <a href="#" class="text-purple-600 font-semibold">Mulai Belajar <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+   
+    
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About CodeGuide</h3>
+            <p>Your comprehensive resource for learning about programming languages and their applications in modern software development.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#popular">Popular Languages</a></li>
+              <li><a href="#beginner">Beginner Friendly</a></li>
+              <li><a href="#advanced">Advanced Languages</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Learning Paths</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 CodeGuide. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    import './style.css'
+
+// Add smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Simple search functionality
+const searchInput = document.querySelector('.search-bar input');
+const languageCards = document.querySelectorAll('.language-card');
+
+searchInput.addEventListener('input', (e) => {
+  const searchTerm = e.target.value.toLowerCase();
+  
+  languageCards.forEach(card => {
+    const title = card.querySelector('h3').textContent.toLowerCase();
+    const content = card.querySelector('.language-content').textContent.toLowerCase();
+    
+    if (title.includes(searchTerm) || content.includes(searchTerm)) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
+  </script>
+</html>
