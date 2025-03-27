@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academy Coding</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="website icon" type="png" href="Purple minimalist Tech Company Logo.png">
+    <link
+      rel="website icon"
+      type="png"
+      href="Purple minimalist Tech Company Logo.png"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -25,9 +33,7 @@
           <path d="m7 8-4 4 4 4" />
           <path d="m16.5 4-5 16" />
         </svg>
-        <span>
-         Academy Coding
-        </span>
+        <span> Academy Coding </span>
       </div>
       <div class="toggle" id="toggle">
         &#9776;
@@ -37,6 +43,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="layanan.html">Services</a></li>
+
         <!--  -->
       </ul>
     </nav>
@@ -249,30 +256,91 @@
       </div>
     </section>
 
-    <div class="container">
-      <div class="editor-container">
+    <div class="container-editor">
+      <header>
+        <h1><i class="fas fa-code"></i> Code Editor</h1>
+        <div class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </div>
+       </header>
+        <div class="editor-container">
           <div class="editor-section">
-              <h2>HTML</h2>
-              <textarea id="html-code" placeholder="Enter HTML code"></textarea>
+            <div class="section-header">
+              <h2><i class="fab fa-html5"></i> HTML</h2>
+              <button class="copy-btn" data-target="html-code">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+            <textarea id="html-code" placeholder="Enter HTML code"></textarea>
           </div>
-          <div class="editor-section">
-              <h2>CSS</h2>
-              <textarea id="css-code" placeholder="Enter CSS code"></textarea>
-          </div>
-          <div class="editor-section">
-              <h2>JavaScript</h2>
-              <textarea id="js-code" placeholder="Enter JavaScript code"></textarea>
-          </div>
-      </div>
-      <button id="run-btn">Run Code</button>
-      <div class="output">
-          <h2>Output</h2>
-          <iframe id="output-frame"></iframe>
-      </div>
-  </div>
 
-  <script src="main.js"></script>
-    
+          <div class="editor-section">
+            <div class="section-header">
+              <h2><i class="fab fa-css3-alt"></i> CSS</h2>
+              <button class="copy-btn" data-target="css-code">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+            <textarea id="css-code" placeholder="Enter CSS code"></textarea>
+          </div>
+
+          <div class="editor-section">
+            <div class="section-header">
+              <h2><i class="fab fa-js"></i> JavaScript</h2>
+              <button class="copy-btn" data-target="js-code">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+            <textarea
+              id="js-code"
+              placeholder="Enter JavaScript code"
+            ></textarea>
+          </div>
+
+          <div class="editor-section">
+            <div class="section-header">
+              <h2><i class="fab fa-php"></i> PHP</h2>
+              <button class="copy-btn" data-target="php-code">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+            <textarea id="php-code" placeholder="Enter PHP code"></textarea>
+          </div>
+
+          <div class="editor-section">
+            <div class="section-header">
+              <h2><i class="fab fa-python"></i> Python</h2>
+              <button class="copy-btn" data-target="python-code">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+            <textarea
+              id="python-code"
+              placeholder="Enter Python code"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="action-bar">
+          <button id="run-btn" class="primary-btn">
+            <i class="fas fa-play"></i> Run Code
+          </button>
+          <button id="clear-btn" class="secondary-btn">
+            <i class="fas fa-trash"></i> Clear All
+          </button>
+        </div>
+
+        <div class="output">
+          <div class="section-header">
+            <h2><i class="fas fa-desktop"></i> Output</h2>
+            <button id="refresh-btn">
+              <i class="fas fa-sync-alt"></i>
+            </button>
+          </div>
+          <iframe id="output-frame"></iframe>
+        </div>
+      </div>
+    <script src="main.js"></script>
 
     <!-- CTA Section -->
     <section class="cta">
@@ -282,8 +350,6 @@
       </div>
     </section>
 
-  
-
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -292,4 +358,3 @@
     </footer>
   </body>
 </html>
-
